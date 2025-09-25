@@ -2,7 +2,7 @@
 const carousel = document.getElementById("carousel");
 
 let scrollAmount = 0;
-const slideTimer = setInterval(() => {
+setInterval(() => {
   carousel.scrollBy({ left: 270, behavior: "smooth" });
   scrollAmount += 270;
 

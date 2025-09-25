@@ -1,0 +1,170 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hero */
+header {
+  height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?travel,beach') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-box input, .search-box button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-box button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #0056b3;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Destinations */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  min-width: 250px;
+  scroll-snap-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+
+/* About */
+#about {
+  background: #f9f9f9;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Contact */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

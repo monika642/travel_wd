@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="hero-content">
+      <h1>Travel Explorer</h1>
+      <p>Discover and book your next adventure</p>
+      <div class="search-box">
+        <input type="text" placeholder="Where to?">
+        <input type="date">
+        <input type="number" placeholder="Guests" min="1" value="1">
+        <button>Search</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Destinations -->
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="carousel" id="carousel">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?paris,eiffel" alt="Paris">
+        <h3>Paris</h3>
+        <p class="price">Hotels from $120/night</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?maldives,beach" alt="Maldives">
+        <h3>Maldives</h3>
+        <p class="price">Hotels from $250/night</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?tokyo,japan" alt="Tokyo">
+        <h3>Tokyo</h3>
+        <p class="price">Hotels from $180/night</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?newyork,city" alt="New York">
+        <h3>New York</h3>
+        <p class="price">Hotels from $200/night</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?rome,italy" alt="Rome">
+        <h3>Rome</h3>
+        <p class="price">Hotels from $140/night</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?sydney,australia" alt="Sydney">
+        <h3>Sydney</h3>
+        <p class="price">Hotels from $170/night</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Travel Explorer helps you book unforgettable trips across the globe.  
+      From affordable hotels to luxury resorts, we bring the best travel deals right to you.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

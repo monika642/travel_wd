@@ -1,27 +1,40 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
   line-height: 1.6;
+  background: #f5f5f5;
 }
 
 /* Navbar */
-nav {
-  position: fixed;
+header {
+  background: #2196f3;
+  color: #fff;
+  padding: 15px 20px;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-  padding: 15px;
   z-index: 1000;
 }
 
-nav ul {
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav ul {
   list-style: none;
+  display: flex;
   gap: 20px;
 }
 
@@ -29,82 +42,71 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ffd700;
+  text-decoration: underline;
 }
 
 /* Hero */
-header {
-  height: 100vh;
-  background: url('https://source.unsplash.com/1600x900/?travel,beach') no-repeat center center/cover;
+.hero {
+  background: url("https://source.unsplash.com/1600x600/?travel,beach") no-repeat center center/cover;
+  height: 70vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
+  color: white;
   text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero p {
+  margin: 10px 0;
+}
+
+.btn {
+  background: #ff9800;
   color: white;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  background: rgba(0,0,0,0.5);
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.search-box {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.search-box input, .search-box button {
-  padding: 10px;
-  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
   border-radius: 5px;
+  margin-top: 15px;
 }
 
-.search-box button {
-  background: #007bff;
-  color: white;
-  cursor: pointer;
-}
-
-.search-box button:hover {
-  background: #0056b3;
+.btn:hover {
+  background: #e68900;
 }
 
 /* Sections */
 section {
-  padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
-section h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #333;
-}
-
-/* Destinations */
+/* Carousel */
 .carousel {
   display: flex;
-  overflow-x: auto;
   gap: 20px;
-  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   padding: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 250px;
-  scroll-snap-align: center;
+  text-align: center;
   transition: transform 0.3s;
 }
 
@@ -115,56 +117,40 @@ section h2 {
   object-fit: cover;
 }
 
+.card h3 {
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #388e3c;
+}
+
 .card:hover {
   transform: scale(1.05);
 }
 
-.price {
-  color: green;
-  font-weight: bold;
-  margin: 10px 0 15px;
-}
-
-/* About */
-#about {
-  background: #f9f9f9;
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Contact */
-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 12px;
-  background: #007bff;
+/* Book button */
+.book-btn {
+  background: #ff5722;
   color: white;
   border: none;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.3s;
 }
 
-form button:hover {
-  background: #0056b3;
+.book-btn:hover {
+  background: #e64a19;
 }
 
 /* Footer */
 footer {
-  background: #222;
+  background: #2196f3;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  margin-top: 20px;
 }

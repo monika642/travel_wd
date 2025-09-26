@@ -7,22 +7,29 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#hotels">Hotels</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header style="background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover; color:white; height:100vh; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center;">
-    <h1>Explore The World</h1>
-    <p>Discover amazing places with us</p>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>Travel Explorer</h1>
+      <ul>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Explore The World</h2>
+    <p>Discover amazing places with us</p>
+    <a href="#destinations" class="btn">Get Started</a>
+  </section>
+
+  <!-- Destinations Section -->
   <section id="destinations">
     <h2>Top Destinations</h2>
-    <div class="grid">
+    <div class="carousel" id="carousel">
       <div class="card">
         <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
         <h3>Paris</h3>
@@ -46,32 +53,38 @@
     </div>
   </section>
 
+  <!-- Hotels Section -->
   <section id="hotels">
     <h2>Best Hotels</h2>
-    <div class="grid">
-      <div class="card">
+    <div class="hotel-grid">
+      <div class="hotel-card">
         <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Luxury Hotel">
         <h3>Luxury Stay</h3>
-        <p>Experience world-class comfort</p>
+        <p class="price">₹15,000 / night</p>
+        <button class="book-btn">Book Now</button>
       </div>
-      <div class="card">
+      <div class="hotel-card">
         <img src="https://images.unsplash.com/photo-1501117716987-c8e1ecb2101f" alt="Beach Resort">
         <h3>Beach Resort</h3>
-        <p>Relax by the ocean</p>
+        <p class="price">₹12,000 / night</p>
+        <button class="book-btn">Book Now</button>
       </div>
-      <div class="card">
+      <div class="hotel-card">
         <img src="https://images.unsplash.com/photo-1560185008-b033106af10f" alt="Mountain Hotel">
         <h3>Mountain Escape</h3>
-        <p>Peaceful retreat in nature</p>
+        <p class="price">₹10,000 / night</p>
+        <button class="book-btn">Book Now</button>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p style="text-align:center;">Email: info@travelexplorer.com | Phone: +91 98765 43210</p>
+    <p>Email: info@travelexplorer.com | Phone: +91 98765 43210</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Travel Explorer | Designed for Internship Project</p>
   </footer>
